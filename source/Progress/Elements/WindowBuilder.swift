@@ -26,7 +26,8 @@ class WindowBuilder {
         
         baseWindow?.bounds = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         baseWindow?.backgroundColor = UIColor.clear
-        baseWindow?.windowLevel = UIWindow.Level.alert + 1
+        baseWindow?.windowLevel = UIWindowLevelAlert + 1
+
         baseWindow?.makeKeyAndVisible()
         
         return baseWindow
